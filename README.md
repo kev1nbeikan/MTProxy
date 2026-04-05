@@ -7,7 +7,7 @@
 ## Развертывание
 
 ```bash
-git clone https://github.com/lingeniare/MTProxy.git && cd MTProxy && sudo bash install_mtproxy.sh
+git clone https://github.com/lingeniare/MTProxy.git && cd MTProxy && bash install_mtproxy.sh
 ```
 
 После завершения скрипт выведет готовую ссылку для подключения. Откройте её на телефоне — Telegram подхватит прокси автоматически.
