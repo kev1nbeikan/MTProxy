@@ -35,8 +35,8 @@ INSTALL_DIR="/opt/MTProxy"  # Директория установки
 CONFIG_DIR="/etc/mtproxy"   # Директория конфигов и секретов
 PROXY_TAG=""
 FAKE_TLS_DOMAIN="www.google.com"  # Домен для Fake TLS
-RATE_LIMIT="5/min"          # Лимит новых подключений на IP
-RATE_BURST=10               # Всплеск для rate-limit
+RATE_LIMIT="20/min"          # Лимит новых подключений на IP
+RATE_BURST=30               # Всплеск для rate-limit
 
 # --- Служебные функции ---
 info()  { echo -e "${CYAN}[INFO]${NC}  $*"; }
@@ -438,6 +438,9 @@ if [[ "$SERVER_IP" == "YOUR_SERVER_IP" ]]; then
 else
     ok "Внешний IP: $SERVER_IP"
 fi
+
+
+
 
 # --- Финальный отчет о развертывании ---
 echo ""
